@@ -8,14 +8,18 @@ let counter = 0;
 function App() {
   let [counter, setCounter] = useState(0);
   const addValue = () => {
-    counter++;
     console.log(counter);
-    setCounter(counter++);
+    setCounter(counter + 1);
+    setCounter(counter + 1);
+    setCounter(counter + 1);
+    setCounter(counter + 1);
   };
   const substractValue = () => {
-    counter--;
     console.log(counter);
-    setCounter(counter--);
+    setCounter(counter - 1);
+    setCounter(counter - 1);
+    setCounter(counter - 1);
+    setCounter(counter - 1);
   };
   return (
     <>
